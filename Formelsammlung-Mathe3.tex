@@ -16,12 +16,28 @@
 \begin{document}
 \begin{flushleft}
 
+\textbf{Quantil}
+
+$lim_{x\nearrow Q_p}F(x) \leq p \leq F(Q_p)$\\
+
+\textbf{Binomialkoeffizienten}
+
+$\binom{n}{k} = \frac{n!}{k!(n-k)!}$\\
+$\binom{n}{k} = 0$ für k>n\\
+$\binom{n}{0} = 1$; $\binom{n}{1} = n$\\
+
 \textbf{Binomialverteilung}
 
-$P(X=k) = (\binom{n}{k}p^k(1-p)^{n-k})$\\
+$P(X=k) = \binom{n}{k}p^k(1-p)^{n-k}$\\
 $\mu = np$\\
 $\sigma = \sqrt{np(1-p)}$\\
-$F(t) \approx \Phi(\frac{t+0,5-\mu}{\sigma})$ bei $\sigma^2 \geq 9$
+$F(t) \approx \Phi(\frac{t+0,5-\mu}{\sigma})$ bei $np(1-p) \geq 9$
+
+\textbf{Hypergeometrische Verteilung}
+
+$P(X=k) = \frac{\binom{M}{k}\binom{N-M}{n-k}}{\binom{N}{n}}\\
+
+\textbf{Poisson Verteilung}
 
 \textbf{Verteilungsfunktion}
 
@@ -37,12 +53,31 @@ $E(X) = \int_{-\infty}^{\infty} xf(x) dx$
 $F(x) = \Phi(\frac{x-\mu}{\sigma})$\\
 $\Phi(-t) = 1-\Phi(t)$
 
+\textbf{Gleichverteilung auf [a,b]}
+
+$f(x) = \frac{1}{b-a}$ für $x \in (a,b)$ sonst 0$\\
+$E(X) = \frac{b+a}{2}$\\
+$V(X) = \frac{(b-a)^2}{12}
+
 \textbf{Exponentialverteilung}
 
-$f(x) = \lambda e^{-\lambda x}$ für $x \geq 0$\\
-$F(t) = 1-e^{-\lambda t}$ für $t \geq 0$\\
-$E(X) = \frac{1}{\lambda}$\\
+$f(x) = \lambda e^{-\lambda x}$ für $x \geq 0$ sonst 0\\
+$F(t) = 1-e^{-\lambda t}$ für $t \geq 0$ sonst 0\\
+$E(X) = \frac{1}{\lambda}$; $V(X) = \frac{1}{\lambda^2}\\
 
+\textbf{Stichprobengrößen}
+
+$\bar{x} = \frac{1}{n} \sum_{i=1}^{n}x_i$\\
+$\bar{s}_x^2 = \frac{1}{n-1} \sum_{i=1}^{n}(x_i-\bar{x})^2$\\
+emp. Korrelation: $s_{x,y} = \frac{1}{n-1} \sum_{i=1}^{n}(x_i-\bar{x})(y_i-\bar{y})$\\
+
+\textbf{Konfidenzintervalle}
+
+$[\bar{X}-\sigma z_{1-\alpha/2}/\sqrt{n}, \bar{X}+\sigma z_{1-\alpha/2}/\sqrt{n}]$\\
+$(-\infty, \bar{X}+\sigma z_{1-\alpha}/\sqrt{n}]$\\
+$[\bar{X} - t_{n-1,1-\alpha/2}\bar{S}/\sqrt{n}, \bar{X} + t_{n-1,1-\alpha/2}\bar{S}/\sqrt{n}]$\\
+$[\frac{(n-1)\bar{S}^2}{c_{n-1,1-\alpha/2}},\frac{(n-1)\bar{S}^2}{c_{n-1,\textcolor{red}{\alpha/2}}}]$ (für Varianz)\\
+$[\frac{k}{n}-\frac{z_{1-\alpha/2}}{\sqrt{n}}\sqrt{\frac{k}{n}(1-\frac{k}{n})}, \frac{k}{n}+..]$ (für B mit k,n-k>50)\\
 
 
 \end{flushleft}
