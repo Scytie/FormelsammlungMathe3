@@ -1,13 +1,13 @@
 # Formelsammlung Mathe III WiSe16/17
 
-## How to build a latex document
+## Latex Dokument bauen
 
-* Install latex: ``sudo apt-get install texlive-full``
-* Build pdf: ``pdflatex Formelsammlung-Mathe3.tex``
+* Latex installieren: ``sudo apt-get install texlive-full``
+* PDF bauen: ``pdflatex Formelsammlung-Mathe3.tex``
 
-## Build latex with Atom
+## Latex mit Atom bauen
 
-* Install atom-io: https://atom.io/
-* Install atom latex package: https://atom.io/packages/latex
+* Atom installieren: https://atom.io/
+* Atom latex package installieren: https://atom.io/packages/latex
 * Syntax highlighting: https://atom.io/packages/language-latex
-* Build pdf: ctrl+alt+b
+* PDF bauen: ctrl+alt+b
