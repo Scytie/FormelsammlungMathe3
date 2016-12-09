@@ -16,6 +16,32 @@
 \begin{document}
 \begin{flushleft}
 
+\textbf{Wahrscheinlichkeiten}
+
+$P(A \cup B) = P(A) + P(B) - P(A \cap B)$\\
+A und B unabhängig: $P(A \cap B) = P(A) \cdot P(B)$\\
+$P(A|B) = \frac{P(A \cap B)}{P(B)}$\\
+
+\textbf{Satz der totalen Wahrscheinlichkeit}
+
+$P(B) = \sum_{i=1}^m P(A_i) P(B|A_i) = \sum_{i=1}^m P(A_i \cap B)$\\
+
+\textbf{Satz von Bayes}
+
+$P(A_k|B) = \frac{P(A)}{P(B)} \cdot P(B|A_k) = \frac{P(A_k) P(B|A_k)}{\sum_{i=1}^m P(A_i) P(B|A_i)}$\\
+
+\textbf{Zufallsvariablen}
+
+$X: \Omega \rightarrow R$\\
+$P(X=k) = P(X(\omega)=k)$\\
+
+\textbf{Verteilungsfunktion}
+
+$F(t) = P({\omega \in \Omega: X(\omega \leq t)}) = P(X \leq t)$\\
+(1) mon. wachsend (2) $lim_{x\searrow x^*}F(x)=F(x^*)$\\
+(3) $lim_{x\searrow x^*}F(x)-lim_{x\nearrow x^*}F(x)=P(X=x^*)$\\
+$P(x < X \leq y) = F(y) - F(x)$\\
+
 \textbf{Quantil}
 
 $lim_{x\nearrow Q_p}F(x) \leq p \leq F(Q_p)$\\
@@ -78,6 +104,33 @@ $(-\infty, \bar{X}+\sigma z_{1-\alpha}/\sqrt{n}]$\\
 $[\bar{X} - t_{n-1,1-\alpha/2}\bar{S}/\sqrt{n}, \bar{X} + t_{n-1,1-\alpha/2}\bar{S}/\sqrt{n}]$\\
 $[\frac{(n-1)\bar{S}^2}{c_{n-1,1-\alpha/2}},\frac{(n-1)\bar{S}^2}{c_{n-1,\textcolor{red}{\alpha/2}}}]$ (für Varianz)\\
 $[\frac{k}{n}-\frac{z_{1-\alpha/2}}{\sqrt{n}}\sqrt{\frac{k}{n}(1-\frac{k}{n})}, \frac{k}{n}+..]$ (für B mit k,n-k>50)\\
+
+\textbf{Hypothesentest Erwartungswert}
+
+$H_0: \mu > \mu_0$; $\bar{H_0}: \mu \leq \mu_0$\\
+$P(A_0|\bar{H_0})$ = $P(\frac{Z-\mu_0}{\sigma/\sqrt{n}} \geq k) \leq \alpha$\\
+
+\textbf{Hypothesentest Varianz}
+
+$H_0: \sigma^2 > \sigma_0^2$; $\bar{H_0}: \sigma^2 \leq \sigma_0^2$\\
+$P(A_0|\bar{H_0}) = P(\frac{(n-1)Z}{\sigma^2} \geq k) \leq \alpha$\\
+
+\textbf{Lagrange-Interpolation}
+
+$L_i(x) = \prod_{j=0;j \ne i}^n \frac{x-x_j}{x_i-x_j}$\\
+$P_n(x) = \sum_{i=0}^n y_i L_i(x)$\\
+
+\textbf{Newton-Interpolation}
+
+$P_n(x) = \sum_{i=0}^n \alpha_{i,i} \prod_{j=0}^{i-1}(x-x_j)$\\
+$\alpha_{i,0} = y_i$; $\alpha_{i,j} = \frac{\alpha_{i,j-1} - \alpha_{i-1,j-1}}{x_i - x_{i-j}}$\\
+
+\textbf{Neville-Interpolation}
+
+$P_{i,0}(x) = y_i$\\
+$P_{i,j}(x) = \frac{(x-x_{i-j})P_{i,j-1}(x) - (x-x_i)P_{i-1,j-1}(x)}{x_i - x_{i-j}}$\\
+
+
 
 
 \end{flushleft}
