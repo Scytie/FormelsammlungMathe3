@@ -130,6 +130,20 @@ $\alpha_{i,0} = y_i$; $\alpha_{i,j} = \frac{\alpha_{i,j-1} - \alpha_{i-1,j-1}}{x
 $P_{i,0}(x) = y_i$\\
 $P_{i,j}(x) = \frac{(x-x_{i-j})P_{i,j-1}(x) - (x-x_i)P_{i-1,j-1}(x)}{x_i - x_{i-j}}$\\
 
+\textbf{Newton-Cotes-Formel}
+
+$\int_a^b f(x) dx \approx h \sum_{i=0}^n \alpha_i f(x_i)$ mit $h=\frac{b-a}{h}$; $x_i = a + hi$\\
+$\alpha_i = \int_0^n \Pi_{j=0;j\neq i}^n \frac{t-j}{i-j} dt$\\
+
+\textbf{Newtonverfahren}
+
+$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$\\
+$x_{n+1} = x_n - \frac{x_n - x_{n-1}}{f(x_n) - f(x_{n-1})} \cdot f(x_n)$\\
+
+\textbf{Differenzieren und Integrieren}
+
+\textbf{Werte von Sinus/Cosinus}
+
 
 
 
