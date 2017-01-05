@@ -140,6 +140,46 @@ $\alpha_i = \int_0^n \Pi_{j=0;j\neq i}^n \frac{t-j}{i-j} dt$\\
 $x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$\\
 $x_{n+1} = x_n - \frac{x_n - x_{n-1}}{f(x_n) - f(x_{n-1})} \cdot f(x_n)$\\
 
+\textbf{strikt diagonaldominant}
+
+$\forall j = 1,..,n: |a_{\textcolor{red}{ii}}| > \sum_{i=1,i\neq j}^n |a_{\textcolor{red}{ji}}|$\\
+J- und G-S-Verfahren konvergieren hier gegen Lösung\\
+
+\textbf{Jacobiverfahren}
+
+$A = L + U + D$ L: Lower, U: Upper, D: Diag.\\
+$x_{k+1} := D^{-1}(b-(L+U)x_k)$\\
+
+\textbf{Gauß-Seidel-Verfahren}
+
+$x_{k+1} = (D+L)^{-1} (b-Ux_k)$\\
+
+\textbf{LU-Faktorisierung}
+
+$A = PLU$, L: untere DM mit 1 auf Diag., P: Permut.\\
+$U_0 = A$, $L_0 = E_n$\\
+Pivot: \\
+
+\textbf{Cholesky-Zerlegung}
+
+A muss symmetrisch und positiv definit sein\\
+in Praxis: symmetrisch und dann probieren, ob Verfahren funktioniert\\
+$A = GG^T$, G - untere Dreiecksmatrix\\
+$g_{jj} = \sqrt{a_{jj} - \sum_{k=1}^{j-1} g_{jk}^2}$\\
+$g_{ij} = \frac{1}{g_{jj}} (a_{ij} - \sum_{k=1}^{j-1} g_{ik}g_{jk}), i=j+1,..,n$\\
+zeilenweise von links nach rechts\\
+Lösen GS: $GG^Tx=b$, $y:=G^Tx$\\
+1) y aus $Gy=b$ 2) x aus $G^Tx=y$\\
+
+\textbf{QR-Zerlegung}
+
+$A = QR$\\
+$u_i = a_i - \sum_{j=1}^{i-1} \frac{<u_j, a_{\textcolor{red}{i}}>}{||u_j||^2}u_j$\\
+$q_i = u_i / ||u_i||$, $r_{ij} = \frac{<u_i, a_j>}{||u_i||}, 1 \leq i \leq j \leq n$\\
+
+
+
+
 \textbf{Differenzieren und Integrieren}
 
 \textbf{Werte von Sinus/Cosinus}
