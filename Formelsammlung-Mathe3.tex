@@ -142,8 +142,22 @@ $x_{n+1} = x_n - \frac{x_n - x_{n-1}}{f(x_n) - f(x_{n-1})} \cdot f(x_n)$\\
 
 \textbf{strikt diagonaldominant}
 
-$\forall j = 1,..,n: |a_{\textcolor{red}{ii}}| > \sum_{i=1,i\neq j}^n |a_{\textcolor{red}{ji}}|$\\
+$\forall i = 1,..,n: |a_{\textcolor{red}{ii}}| > \sum_{j=1,j\neq i}^n |a_{ij}|$\\
 J- und G-S-Verfahren konvergieren hier gegen Lösung\\
+
+\textbf{Normen}
+
+Zeilensummennorm:\\
+$||A||_\infty = max_{||x||_\infty=1}||Ax||_\infty=max_{i=1..m}\sum_{j=1}^n |a_{ij}|$\\
+Spaltensummennorm:\\
+$||A||_1 = max_{||x||_1=1}||Ax||_1=max_{j=1..m}\sum_{i=1}^n |a_{ij}|$\\
+Spektralnorm:\\
+$||A||_2 = max_{||x||_2=1}||Ax||_2=...$\\
+Submultiplikativität:\\
+$||AB|| \leq ||A|| \cdot ||B||$\\
+Verträglichkeit mit Vektornorm:\\
+$||Ax||_V \leq ||A|| \cdot ||x||_V\\
+
 
 \textbf{Jacobiverfahren}
 
@@ -177,12 +191,19 @@ $A = QR$\\
 $u_i = a_i - \sum_{j=1}^{i-1} \frac{<u_j, a_{\textcolor{red}{i}}>}{||u_j||^2}u_j$\\
 $q_i = u_i / ||u_i||$, $r_{ij} = \frac{<u_i, a_j>}{||u_i||}, 1 \leq i \leq j \leq n$\\
 
+\textbf{Separation der Variablen}
 
+Umstellen, dass alle x auf einer Seite und y auf der anderen. Dann integrieren.
 
 
 \textbf{Differenzieren und Integrieren}
 
 \textbf{Werte von Sinus/Cosinus}
+
+\textbf{Additionstheorem}
+
+\sin \left( {\theta _1  \pm \theta _2 } \right) = \sin \theta _1 \cos \theta _2  \pm \cos \theta _1 \sin \theta _2\\
+\cos \left( {\theta _1  \pm \theta _2 } \right) = \cos \theta _1 \cos \theta _2  \mp \sin \theta _1 \sin \theta _2\\
 
 
 
