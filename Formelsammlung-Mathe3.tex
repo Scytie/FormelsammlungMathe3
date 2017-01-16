@@ -57,19 +57,19 @@ $\binom{n}{0} = 1$; $\binom{n}{1} = n$\\
 $P(X=k) = \binom{n}{k}p^k(1-p)^{n-k}$\\
 $\mu = np$\\
 $\sigma = \sqrt{np(1-p)}$\\
-$F(t) \approx \Phi(\frac{t+0,5-\mu}{\sigma})$ bei $np(1-p) \geq 9$
+$F(t) \approx \Phi(\frac{t+0,5-\mu}{\sigma})$ bei $\sigma^2 = np(1-p) \geq 9$
 
 \textbf{Hypergeometrische Verteilung}
 
 $P(X=k) = \frac{\binom{M}{k}\binom{N-M}{n-k}}{\binom{N}{n}}$\\
 
-\textbf{Poisson Verteilung}
+\textbf{Poisson-Verteilung}
 
 \textbf{Verteilungsfunktion}
 
 $F(t) = \int_{-\infty}^t f(x) dx$
 
-\textbf{E und Var}
+\textbf{Erwartungswert und Varianz}
 
 $Var(X) = E(X^2) - E(X)^2$\\
 $E(X) = \int_{-\infty}^{\infty} xf(x) dx$
@@ -99,8 +99,8 @@ emp. Korrelation: $s_{x,y} = \frac{1}{n-1} \sum_{i=1}^{n}(x_i-\bar{x})(y_i-\bar{
 
 \textbf{Konfidenzintervalle}
 
-$[\bar{X}-\sigma z_{1-\alpha/2}/\sqrt{n}, \bar{X}+\sigma z_{1-\alpha/2}/\sqrt{n}]$\\
-$(-\infty, \bar{X}+\sigma z_{1-\alpha}/\sqrt{n}]$\\
+$[\bar{X}-\sigma z_{1-\alpha/2}/\sqrt{n}, \bar{X}+\sigma z_{1-\alpha/2}/\sqrt{n}]$ (für $\mu)$\\
+$(-\infty, \bar{X}+\sigma z_{\textcolor{red}{1-\alpha}}/\sqrt{n}]$ (einseitig für $\mu)$\\
 $[\bar{X} - t_{n-1,1-\alpha/2}\bar{S}/\sqrt{n}, \bar{X} + t_{n-1,1-\alpha/2}\bar{S}/\sqrt{n}]$\\
 $[\frac{(n-1)\bar{S}^2}{c_{n-1,1-\alpha/2}},\frac{(n-1)\bar{S}^2}{c_{n-1,\textcolor{red}{\alpha/2}}}]$ (für Varianz)\\
 $[\frac{k}{n}-\frac{z_{1-\alpha/2}}{\sqrt{n}}\sqrt{\frac{k}{n}(1-\frac{k}{n})}, \frac{k}{n}+..]$ (für B mit k,n-k>50)\\
@@ -156,7 +156,7 @@ $||A||_2 = max_{||x||_2=1}||Ax||_2=...$\\
 Submultiplikativität:\\
 $||AB|| \leq ||A|| \cdot ||B||$\\
 Verträglichkeit mit Vektornorm:\\
-$||Ax||_V \leq ||A|| \cdot ||x||_V\\
+$||Ax||_V \leq ||A|| \cdot ||x||_V$\\
 
 
 \textbf{Jacobiverfahren}
@@ -202,8 +202,8 @@ Umstellen, dass alle x auf einer Seite und y auf der anderen. Dann integrieren.
 
 \textbf{Additionstheorem}
 
-\sin \left( {\theta _1  \pm \theta _2 } \right) = \sin \theta _1 \cos \theta _2  \pm \cos \theta _1 \sin \theta _2\\
-\cos \left( {\theta _1  \pm \theta _2 } \right) = \cos \theta _1 \cos \theta _2  \mp \sin \theta _1 \sin \theta _2\\
+$\sin \left( {\theta _1  \pm \theta _2 } \right) = \sin \theta _1 \cos \theta _2  \pm \cos \theta _1 \sin \theta _2$\\
+$\cos \left( {\theta _1  \pm \theta _2 } \right) = \cos \theta _1 \cos \theta _2  \mp \sin \theta _1 \sin \theta _2$\\
 
 
 
