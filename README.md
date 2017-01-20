@@ -11,3 +11,7 @@
 * Atom latex package installieren: https://atom.io/packages/latex
 * Syntax highlighting: https://atom.io/packages/language-latex
 * PDF bauen: ctrl+alt+b
+
+## Unterstützung
+
+Wenn Ihr Fehler findet oder denkt, dass noch etwas fehlt, lasst es mich bitte wissen!
