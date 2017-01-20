@@ -195,17 +195,95 @@ $q_i = u_i / ||u_i||$, $r_{ij} = \frac{<u_i, a_j>}{||u_i||}, 1 \leq i \leq j \le
 
 Umstellen, dass alle x auf einer Seite und y auf der anderen. Dann integrieren.
 
+\textbf{Lineare DGL 1. Ordnung}
+
+$y'(x)=a_0(x)y(x) \Rightarrow y(x) = ce^{\int{a_0}dx}$\\
+
+\textbf{Variation der Konstanten}
+
+(1) Homogene DGL lösen (2) c -> k(x); y=k(x)+.. differenzieren (3) y, y' in inhomogene DGL einsetzen -> k(x)\\
+
 
 \textbf{Differenzieren und Integrieren}
 
-\textbf{Werte von Sinus/Cosinus}
+$\frac{d}{{dx}}x^n  = nx^{\left( {n - 1} \right)}$\\
+$\frac{d}{{dx}}e^{ax}  = ae^{ax}$\\
+$\frac{d}{{dx}}b^x  = b^x \ln \left( b \right)$\\
+$\frac{d}{{dx}}\ln \left( x \right) = \frac{1}{x}$\\
+$\frac{d}{{dx}}\sin x = \cos x$\\
+$\frac{d}{{dx}}\cos x =  - \sin x$\\
+
+$\int {x^n } dx = \frac{{x^{n + 1} }}{{n + 1}},(n \ne  - 1)$\\
+$\int {\frac{1}{x}} dx = \ln \left| x \right| + c$\\
+$\int {\cos (ax)} dx = \frac{1}{a}\sin (ax) + c$\\
+$\int {\sin (ax)} dx =  - \frac{1}{a}\cos (ax) + c$\\
+$\int {\ln (x)} dx = x ln(x) -x$\\
+
+\textbf{Regeln Differenzieren}
+
+$\frac{d}{{dx}}\left( {f\left( x \right)g\left( x \right)} \right) = f\left( x \right)g'\left( x \right) + f'\left( x \right)g\left( x \right)$\\
+$\frac{d}{{dx}}\left( {\frac{{f\left( x \right)}}{{g\left( x \right)}}} \right) = \frac{{f'\left( x \right)g\left( x \right) - f\left( x \right)g'\left( x \right)}}{{g^2 \left( x \right)}}$\\
+$\frac{d}{{dx}}\left[ {f\left( u \right)} \right] = \frac{d}{{du}}\left[ {f\left( u \right)} \right]\frac{{du}}{{dx}}$\\
+
+\textbf{Regeln Integrieren}
+
+$\int {uv'} dx = uv - \int {u'v}dx$\\
 
 \textbf{Additionstheorem}
 
 $\sin \left( {\theta _1  \pm \theta _2 } \right) = \sin \theta _1 \cos \theta _2  \pm \cos \theta _1 \sin \theta _2$\\
 $\cos \left( {\theta _1  \pm \theta _2 } \right) = \cos \theta _1 \cos \theta _2  \mp \sin \theta _1 \sin \theta _2$\\
 
+\textbf{Potenzgesetze}
 
+$x^a x^b  = x^{\left( {a + b} \right)}$\\
+$x^a y^a  = \left( {xy} \right)^a$\\
+$\left( {x^a } \right)^b  = x^{\left( {ab} \right)}$\\
+
+\textbf{Logarithmengesetze}
+
+$y = \log _b \left( x \right) \Leftrightarrow x = b^y$\\
+$\log _b \left( 1 \right) = 0$\\
+$\log _b \left( b \right) = 1$\\
+$\log _b \left( {xy} \right) = \log _b \left( x \right) + \log _b \left( y \right)$\\
+$\log _b \left( {\frac{x}{y}} \right) = \log _b \left( x \right) - \log _b \left( y \right)$\\
+$\log _b \left( {x^n } \right) = n\log _b \left( x \right)$\\
+$\log _b \left( x \right) = \log _b \left( c \right)\log _c \left( x \right) = \frac{{\log _c \left( x \right)}}{{\log _c \left( b \right)}}$\\
+
+\textbf{Lineare Unabhängigkeit}
+
+\textbf{Wronski-Determinante}
+
+
+\textbf{Werte von Sinus/Cosinus}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rule[-1ex]{0pt}{2.5ex} x & sin(x) & cos(x) & tan(x) \\
+\hline
+\rule[-1ex]{0pt}{2.5ex} $0^\circ$ & $0$ & $1$ & $0$ \\
+\hline
+\rule[-1ex]{0pt}{2.5ex} $30^\circ$ & $\frac{1}{2}$ & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{3}}{3}$ \\
+\hline
+\rule[-1ex]{0pt}{2.5ex} $45^\circ$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{2}}{2}$ & $1$ \\
+\hline
+\rule[-1ex]{0pt}{2.5ex} $60^\circ$ & $\frac{\sqrt{3}}{2}$ & $\frac{1}{2}$ & $\sqrt{3}$ \\
+\hline
+\rule[-1ex]{0pt}{2.5ex} $90^\circ$ & $1$ & $0$ & - \\
+\hline
+\rule[-1ex]{0pt}{2.5ex} $120^\circ$ & $\frac{\sqrt{3}}{2}$ & $-\frac{1}{2}$ & $-\sqrt{3}$ \\
+\hline
+\rule[-1ex]{0pt}{2.5ex} $135^\circ$ & $\frac{\sqrt{2}}{2}$ & $-\frac{\sqrt{2}}{2}$ & $-1$ \\
+\hline
+\rule[-1ex]{0pt}{2.5ex} $150^\circ$ & $\frac{1}{2}$ & $-\frac{\sqrt{3}}{2}$ & $-\frac{\sqrt{3}}{3}$ \\
+\hline
+\rule[-1ex]{0pt}{2.5ex} $180^\circ$ & $0$ & $-1$ & $0$ \\
+\hline
+\rule[-1ex]{0pt}{2.5ex} $225^\circ$ & $-\frac{\sqrt{2}}{2}$ & $-\frac{\sqrt{2}}{2}$ & $1$ \\
+\hline
+\rule[-1ex]{0pt}{2.5ex} $270^\circ$ & $-1$ & $0$ & - \\
+\hline
+\end{tabular}
 
 
 \end{flushleft}
