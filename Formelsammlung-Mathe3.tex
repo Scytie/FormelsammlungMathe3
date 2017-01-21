@@ -36,6 +36,9 @@ mit Wdh/Zl: $\binom{n+k-1}{k}$\\
 
 \textbf{Wahrscheinlichkeiten}
 
+ZFE: bel. oft, gleiche Bed., Erg. nicht vorhersagbar\\
+Ereignis $A \subseteq \Omega$; Laplace: $P(A) = \frac{|A|}{|\Omega|}$\\
+
 $P(A \cup B) = P(A) + P(B) - P(A \cap B)$\\
 A und B unabhängig: $P(A \cap B) = P(A) \cdot P(B)$\\
 $P(A|B) = \frac{P(A \cap B)}{P(B)}$\\
@@ -50,7 +53,7 @@ $P(A_k|B) = \frac{P(A)}{P(B)} \cdot P(B|A_k) = \frac{P(A_k) P(B|A_k)}{\sum_{i=1}
 
 \textbf{Zufallsvariablen}
 
-$X: \Omega \rightarrow R$\\
+$X: \Omega \rightarrow R$; Realisierungen: $\{ X(\omega) : \omega \in \Omega\}$\\
 $P(X=k) = P(X(\omega)=k)$\\
 
 \textbf{Verteilungsfunktion}
@@ -66,22 +69,30 @@ $lim_{x\nearrow Q_p}F(x) \leq p \leq F(Q_p)$\\
 
 \textbf{Binomialkoeffizienten}
 
-$\binom{n}{k} = \frac{n!}{k!(n-k)!}$\\
+$\binom{n}{k} = \frac{n!}{k!(n-k)!}$; $0! = 1$\\
 $\binom{n}{k} = 0$ für k>n\\
-$\binom{n}{0} = 1$; $\binom{n}{1} = n$\\
+$\binom{n}{0} = \binom{n}{n} = 1$; $\binom{n}{1} = n$\\
 
-\textbf{Binomialverteilung}
+\textbf{Binomialverteilung B(n,p)}
 
 $P(X=k) = \binom{n}{k}p^k(1-p)^{n-k}$\\
 $\mu = np$\\
 $\sigma = \sqrt{np(1-p)}$\\
+$P(X=k) \approx \frac{\lambda^k}{k!}e^{-\lambda}$ für $n \geq 50 \wedge p \leq 0,1$; $\lambda = np$\\
 $F(t) \approx \Phi(\frac{t+0,5-\mu}{\sigma})$ bei $\sigma^2 = np(1-p) \geq 9$
 
-\textbf{Hypergeometrische Verteilung}
+\textbf{Hypergeometrische Verteilung H(n, M, N)}
 
 $P(X=k) = \frac{\binom{M}{k}\binom{N-M}{n-k}}{\binom{N}{n}}$\\
+n: Anz. ziehen; M: ges Eig.; N: gesamt\\
+$E(X) = n\frac{M}{N}$\\
+Apprx durch B bei $n/N < 0,05$\\
 
-\textbf{Poisson-Verteilung}
+\textbf{Poisson-Verteilung $P_\lambda(k)$}
+
+$P(X=k) = \frac{\lambda^k}{k!}e^{-\lambda}$\\
+
+$E(X) = V(X) = \lambda$\\
 
 \textbf{Verteilungsfunktion}
 
@@ -92,7 +103,7 @@ $F(t) = \int_{-\infty}^t f(x) dx$
 $Var(X) = E(X^2) - E(X)^2$\\
 $E(X) = \int_{-\infty}^{\infty} xf(x) dx$
 
-\textbf{Normalverteilung}
+\textbf{Normalverteilung $N(\mu, \sigma^2)$}
 
 $F(x) = \Phi(\frac{x-\mu}{\sigma})$\\
 $\Phi(-t) = 1-\Phi(t)$
@@ -103,7 +114,7 @@ $f(x) = \frac{1}{b-a}$ für $x \in (a,b)$ sonst 0\\
 $E(X) = \frac{b+a}{2}$\\
 $V(X) = \frac{(b-a)^2}{12}$
 
-\textbf{Exponentialverteilung}
+\textbf{Exponentialverteilung $Exp(\lambda)$}
 
 $f(x) = \lambda e^{-\lambda x}$ für $x \geq 0$ sonst 0\\
 $F(t) = 1-e^{-\lambda t}$ für $t \geq 0$ sonst 0\\
@@ -219,7 +230,7 @@ $y'(x)=a_0(x)y(x) \Rightarrow y(x) = ce^{\int{a_0}dx}$\\
 
 \textbf{Variation der Konstanten}
 
-(1) Homogene DGL lösen (2) c -> k(x); y=k(x)+.. differenzieren (3) y, y' in inhomogene DGL einsetzen -> k(x)\\
+(1) Homogene DGL lösen (2) c -> k(x); y(k(x)) differenzieren (3) y, y' in inhomogene DGL einsetzen -> k(x)\\
 
 \textbf{Wronski-Determinante}
 
