@@ -56,12 +56,18 @@ $P(A_k|B) = \frac{P(A)}{P(B)} \cdot P(B|A_k) = \frac{P(A_k) P(B|A_k)}{\sum_{i=1}
 $X: \Omega \rightarrow R$; Realisierungen: $\{ X(\omega) : \omega \in \Omega\}$\\
 $P(X=k) = P(X(\omega)=k)$\\
 
+\textbf{Dichtefunktion $f: \mathbb{R} \rightarrow \mathbb{R}$}
+
+(1) $\forall x \in \mathbb{R}: f(x) \geq 0$; (2) f integrierbar\\
+(3) $\int_{-\infty}^{\infty}f(x)dx = 1$\\
+
 \textbf{Verteilungsfunktion}
 
 $F(t) = P({\omega \in \Omega: X(\omega \leq t)}) = P(X \leq t)$\\
 (1) mon. wachsend (2) $lim_{x\searrow x^*}F(x)=F(x^*)$\\
 (3) $lim_{x\searrow x^*}F(x)-lim_{x\nearrow x^*}F(x)=P(X=x^*)$\\
 $P(x < X \leq y) = F(y) - F(x)$\\
+$F(t) = \int_{-\infty}^t f(x) dx$\\
 
 \textbf{Quantil}
 
@@ -93,16 +99,14 @@ Apprx durch B bei $n/N < 0,05$\\
 $P(X=k) = \frac{\lambda^k}{k!}e^{-\lambda}$\\
 $E(X) = V(X) = \lambda$\\
 
-\textbf{Verteilungsfunktion}
-
-$F(t) = \int_{-\infty}^t f(x) dx$
-
-\textbf{Erwartungswert und Varianz}
+\textbf{Erwartungswert}
 
 $E(X) = \sum_{k \in X} x \cdot P(X=k)$\\
 $E(X) = \int_{-\infty}^{\infty} xf(x) dx$\\
 $E(X + \alpha Y) = E(X) + \alpha E(Y)$\\
 X,Y unabh: $E(X \cdot Y) = E(X) \cdot E(Y)$\\
+
+\textbf{Varianz $\sigma^2$}
 
 $Var(X) = E(X^2) - E(X)^2$\\
 $Var(X+Y) = Var(X) + Var(Y) + 2 Cov(X,Y)$\\
@@ -292,8 +296,7 @@ $\left( {x^a } \right)^b  = x^{\left( {ab} \right)}$\\
 \textbf{Logarithmengesetze}
 
 $y = \log _b \left( x \right) \Leftrightarrow x = b^y$\\
-$\log _b \left( 1 \right) = 0$\\
-$\log _b \left( b \right) = 1$\\
+$\log _b \left( 1 \right) = 0$; $\log _b \left( b \right) = 1$\\
 $\log _b \left( {xy} \right) = \log _b \left( x \right) + \log _b \left( y \right)$\\
 $\log _b \left( {\frac{x}{y}} \right) = \log _b \left( x \right) - \log _b \left( y \right)$\\
 $\log _b \left( {x^n } \right) = n\log _b \left( x \right)$\\
