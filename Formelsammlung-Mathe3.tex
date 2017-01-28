@@ -142,21 +142,22 @@ emp. Korrelation: $s_{x,y} = \frac{1}{n-1} \sum_{i=1}^{n}(x_i-\bar{x})(y_i-\bar{
 
 \textbf{Konfidenzintervalle}
 
+$\Phi(z_{\alpha}) = \alpha$; $\chi^2_n(c_{n-1,\alpha})=\alpha$\\
 $[\bar{X}-\sigma z_{1-\alpha/2}/\sqrt{n}, \bar{X}+\sigma z_{1-\alpha/2}/\sqrt{n}]$ (für $\mu)$\\
 $(-\infty, \bar{X}+\sigma z_{\textcolor{red}{1-\alpha}}/\sqrt{n}]$ (einseitig für $\mu)$\\
-$[\bar{X} - t_{n-1,1-\alpha/2}\bar{S}/\sqrt{n}, \bar{X} + t_{n-1,1-\alpha/2}\bar{S}/\sqrt{n}]$\\
+$[\bar{X} - t_{n-1,1-\alpha/2}\bar{S}/\sqrt{n}, \bar{X} + ...]$ (für $\mu$ ohne $\sigma$)\\
 $[\frac{(n-1)\bar{S}^2}{c_{n-1,1-\alpha/2}},\frac{(n-1)\bar{S}^2}{c_{n-1,\textcolor{red}{\alpha/2}}}]$ (für Varianz)\\
 $[\frac{k}{n}-\frac{z_{1-\alpha/2}}{\sqrt{n}}\sqrt{\frac{k}{n}(1-\frac{k}{n})}, \frac{k}{n}+..]$ (für B mit k,n-k>50)\\
 
 \textbf{Hypothesentest Erwartungswert}
 
 $H_0: \mu > \mu_0$; $\bar{H_0}: \mu \leq \mu_0$\\
-$P(A_0|\bar{H_0})$ = $P(\frac{Z-\mu_0}{\sigma/\sqrt{n}} \geq k) \leq \alpha$\\
+$P(A_0|\bar{H_0}) = P(X \geq k) = 1 - \Phi(\frac{k-\mu_0}{\sigma / \sqrt{n}}) \leq \alpha$\\
 
 \textbf{Hypothesentest Varianz}
 
 $H_0: \sigma^2 > \sigma_0^2$; $\bar{H_0}: \sigma^2 \leq \sigma_0^2$\\
-$P(A_0|\bar{H_0}) = P(\frac{(n-1)Z}{\sigma^2} \geq k) \leq \alpha$\\
+$P(A_0|\bar{H_0}) = P(X \geq k) = 1 - \chi^2_{n-1}(\frac{k(n-1)}{\sigma_0^2}) \leq \alpha$\\
 
 \textbf{Lagrange-Interpolation}
 
