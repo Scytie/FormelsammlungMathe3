@@ -176,13 +176,17 @@ $P_{i,j}(x) = \frac{(x-x_{i-j})P_{i,j-1}(x) - (x-x_i)P_{i-1,j-1}(x)}{x_i - x_{i-
 
 \textbf{Newton-Cotes-Formel}
 
-$\int_a^b f(x) dx \approx h \sum_{i=0}^n \alpha_i f(x_i)$ mit $h=\frac{b-a}{h}$; $x_i = a + hi$\\
+$\int_a^b f(x) dx \approx h \sum_{i=0}^n \alpha_i f(x_i)$ mit $h=\frac{b-a}{n}$; $x_i = a + hi$\\
 $\alpha_i = \int_0^n \Pi_{j=0;j\neq i}^n \frac{t-j}{i-j} dt$\\
 
-\textbf{Newtonverfahren}
+\textbf{Newton- und Sekantenverfahren}
 
 $x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$\\
 $x_{n+1} = x_n - \frac{x_n - x_{n-1}}{f(x_n) - f(x_{n-1})} \cdot f(x_n)$\\
+
+\textbf{Taylorpolynom}
+
+$ T_n f(x;a) = \sum_{k=0}^n \frac{f^{(k)}(a)}{k!}(x-a)^k $
 
 \textbf{strikt diagonaldominant}
 
@@ -315,8 +319,8 @@ $\cos \left( {\theta _1  \pm \theta _2 } \right) = \cos \theta _1 \cos \theta _2
 
 \textbf{Potenzgesetze}
 
-$x^a x^b  = x^{\left( {a + b} \right)}$\\
-$x^a y^a  = \left( {xy} \right)^a$\\
+$x^a x^b  = x^{\left( {a + b} \right)}$;
+$x^a y^a  = \left( {xy} \right)^a$; 
 $\left( {x^a } \right)^b  = x^{\left( {ab} \right)}$\\
 
 \textbf{Logarithmengesetze}
@@ -330,8 +334,9 @@ $\log _b \left( x \right) = \log _b \left( c \right)\log _c \left( x \right) = \
 
 \textbf{Lineare Unabhängigkeit}
 
-\textbf{Werte von Sinus/Cosinus}
+\textbf{Diverse Werte}
 
+$e \approx 2,718$\\
 \begin{tabular}{|c|c|c|c|}
 \hline
 \rule[-1ex]{0pt}{2.5ex} x & sin(x) & cos(x) & tan(x) \\
