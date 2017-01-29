@@ -82,8 +82,7 @@ $\binom{n}{0} = \binom{n}{n} = 1$; $\binom{n}{1} = n$\\
 \textbf{Binomialverteilung B(n,p)}
 
 $P(X=k) = \binom{n}{k}p^k(1-p)^{n-k}$\\
-$\mu = np$\\
-$\sigma = \sqrt{np(1-p)}$\\
+$\mu = np$; $\sigma = \sqrt{np(1-p)}$\\
 $P(X=k) \approx \frac{\lambda^k}{k!}e^{-\lambda}$ für $n \geq 50 \wedge p \leq 0,1$; $\lambda = np$\\
 $F(t) \approx \Phi(\frac{t+0,5-\mu}{\sigma})$ bei $\sigma^2 = np(1-p) \geq 9$
 
@@ -91,7 +90,7 @@ $F(t) \approx \Phi(\frac{t+0,5-\mu}{\sigma})$ bei $\sigma^2 = np(1-p) \geq 9$
 
 $P(X=k) = \frac{\binom{M}{k}\binom{N-M}{n-k}}{\binom{N}{n}}$\\
 n: Anz. ziehen; M: ges Eig.; N: gesamt\\
-$E(X) = n\frac{M}{N}$\\
+$E(X) = n\frac{M}{N}$; $Var(X) = n \frac{M}{N} (1-\frac{M}{N}) \frac{N-n}{N-1}$\\
 Apprx durch B bei $n/N < 0,05$\\
 
 \textbf{Poisson-Verteilung $P_\lambda(k)$}
@@ -111,6 +110,7 @@ X,Y unabh: $E(X \cdot Y) = E(X) \cdot E(Y)$\\
 $Var(X) = E(X^2) - E(X)^2$\\
 $Var(X+Y) = Var(X) + Var(Y) + 2 Cov(X,Y)$\\
 X,Y unabh: $Var(XY) = E(X^2)E(Y^2) - E(X)^2E(Y)^2$\\
+Tschebyscheff: $P(|X-E(X)| \geq \epsilon) \leq \frac{1}{\epsilon^2} V(X)$\\
 
 \textbf{Kovarianz}
 
@@ -221,6 +221,7 @@ $x_{k+1} = (D+L)^{-1} (b-Ux_k)$\\
 $A = PLU$, L: untere DM mit 1 auf Diag., P: Permut., U: obere DM mit Diagonaleinträgen\\
 $U_0 = A$, $L_0 = E_n$; $P^T = P^{-1}$\\
 Gauß auf U; neg Faktor in Zelle von L \\
+Lösen GS: $y:=UX$ wie bei Cholesky\\
 
 \textbf{Cholesky-Zerlegung}
 
@@ -264,6 +265,7 @@ $y_2 = y_1 \cdot u(x)$\\
 
 zwei NST: $y = c_1 e^{\lambda_1 x} + c_2 e^{\lambda_2 x}$\\
 eine NST: $y = c_1 e^{\lambda x} + c_2 \textcolor{red}{x} e^{\lambda x}$\\
+pq-Formel: $x_{1/2} = -\frac{p}{2} \pm \sqrt{(\frac{p}{2})^2 - q}$\\
 
 \textbf{Variation der Konstanten bei 2. Ordnung}
 
