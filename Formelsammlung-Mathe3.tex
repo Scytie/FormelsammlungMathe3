@@ -34,6 +34,12 @@ Ohne Berücksichtigung der Reihenfolge $k < n$\\
 ohne Wdh/Zl: $\binom{n}{k}$;
 mit Wdh/Zl: $\binom{n+k-1}{k}$\\
 
+\textbf{Binomialkoeffizienten}
+
+$\binom{n}{k} = \frac{n!}{k!(n-k)!}$; $0! = 1$\\
+$\binom{n}{k} = 0$ für k>n\\
+$\binom{n}{0} = \binom{n}{n} = 1$; $\binom{n}{1} = n$\\
+
 \textbf{Wahrscheinlichkeiten}
 
 ZFE: bel. oft, gleiche Bed., Erg. nicht vorhersagbar\\
@@ -73,11 +79,12 @@ $F(t) = \int_{-\infty}^t f(x) dx$\\
 
 $lim_{x\nearrow Q_p}F(x) \leq p \leq F(Q_p)$\\
 
-\textbf{Binomialkoeffizienten}
+\textbf{Hypergeometrische Verteilung H(n, M, N)}
 
-$\binom{n}{k} = \frac{n!}{k!(n-k)!}$; $0! = 1$\\
-$\binom{n}{k} = 0$ für k>n\\
-$\binom{n}{0} = \binom{n}{n} = 1$; $\binom{n}{1} = n$\\
+$P(X=k) = \frac{\binom{M}{k}\binom{N-M}{n-k}}{\binom{N}{n}}$\\
+n: Anz. ziehen; M: ges Eig.; N: gesamt\\
+$E(X) = n\frac{M}{N}$; $Var(X) = n \frac{M}{N} (1-\frac{M}{N}) \frac{N-n}{N-1}$\\
+Apprx durch B bei $n/N < 0,05$\\
 
 \textbf{Binomialverteilung B(n,p)}
 
@@ -86,17 +93,26 @@ $\mu = np$; $\sigma = \sqrt{np(1-p)}$\\
 $P(X=k) \approx \frac{\lambda^k}{k!}e^{-\lambda}$ für $n \geq 50 \wedge p \leq 0,1$; $\lambda = np$\\
 $F(t) \approx \Phi(\frac{t+0,5-\mu}{\sigma})$ bei $\sigma^2 = np(1-p) \geq 9$
 
-\textbf{Hypergeometrische Verteilung H(n, M, N)}
-
-$P(X=k) = \frac{\binom{M}{k}\binom{N-M}{n-k}}{\binom{N}{n}}$\\
-n: Anz. ziehen; M: ges Eig.; N: gesamt\\
-$E(X) = n\frac{M}{N}$; $Var(X) = n \frac{M}{N} (1-\frac{M}{N}) \frac{N-n}{N-1}$\\
-Apprx durch B bei $n/N < 0,05$\\
-
 \textbf{Poisson-Verteilung $P_\lambda(k)$}
 
 $P(X=k) = \frac{\lambda^k}{k!}e^{-\lambda}$\\
 $E(X) = V(X) = \lambda$\\
+
+\textbf{Normalverteilung $N(\mu, \sigma^2)$}
+
+$F(x) = \Phi(\frac{x-\mu}{\sigma})$\\
+$\Phi(-t) = 1-\Phi(t)$
+
+\textbf{Gleichverteilung auf [a,b]}
+
+$f(x) = \frac{1}{b-a}$ für $x \in (a,b)$ sonst 0\\
+$E(X) = \frac{b+a}{2}$; $V(X) = \frac{(b-a)^2}{12}$\\
+
+\textbf{Exponentialverteilung $Exp(\lambda)$}
+
+$f(x) = \lambda e^{-\lambda x}$ für $x \geq 0$ sonst 0\\
+$F(t) = 1-e^{-\lambda t}$ für $t \geq 0$ sonst 0\\
+$E(X) = \frac{1}{\lambda}$; $V(X) = \frac{1}{\lambda^2}$\\
 
 \textbf{Erwartungswert}
 
@@ -117,25 +133,9 @@ Tschebyscheff: $P(|X-E(X)| \geq \epsilon) \leq \frac{1}{\epsilon^2} V(X)$\\
 $Cov(X, Y) = E(XY) - E(X)E(Y)$\\
 X,Y unabh: $Cov(X,Y) = 0$\\
 
-\textbf{Normalverteilung $N(\mu, \sigma^2)$}
-
-$F(x) = \Phi(\frac{x-\mu}{\sigma})$\\
-$\Phi(-t) = 1-\Phi(t)$
-
-\textbf{Gleichverteilung auf [a,b]}
-
-$f(x) = \frac{1}{b-a}$ für $x \in (a,b)$ sonst 0\\
-$E(X) = \frac{b+a}{2}$; $V(X) = \frac{(b-a)^2}{12}$\\
-
-\textbf{Exponentialverteilung $Exp(\lambda)$}
-
-$f(x) = \lambda e^{-\lambda x}$ für $x \geq 0$ sonst 0\\
-$F(t) = 1-e^{-\lambda t}$ für $t \geq 0$ sonst 0\\
-$E(X) = \frac{1}{\lambda}$; $V(X) = \frac{1}{\lambda^2}$\\
-
 \textbf{Stichprobengrößen}
 
-$\bar{x} = \frac{1}{n} \sum_{i=1}^{n}x_i$; 
+$\bar{x} = \frac{1}{n} \sum_{i=1}^{n}x_i$;
 $\bar{s}_x^2 = \frac{1}{n-1} \sum_{i=1}^{n}(x_i-\bar{x})^2$\\
 emp. Korrelation: $s_{x,y} = \frac{1}{n-1} \sum_{i=1}^{n}(x_i-\bar{x})(y_i-\bar{y})$\\
 
