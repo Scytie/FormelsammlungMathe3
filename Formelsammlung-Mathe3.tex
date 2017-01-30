@@ -19,19 +19,19 @@
 \textbf{Permutation}
 
 Berücksichtigung der Reihenfolge $k=n$\\
-ohne Wdh/Zl: $n!$\\
+ohne Wdh/Zl: $n!$;
 mit Wdh/Zl: $\frac{n!}{k!}$\\
 
 \textbf{Variation}
 
 Berücksichtigung der Reihenfolge $k < n$\\
-ohne Wdh/Zl: $\frac{n!}{(n-k)!}$\\
+ohne Wdh/Zl: $\frac{n!}{(n-k)!}$;
 mit Wdh/Zl: $n^k$\\
 
 \textbf{Kombination}
 
 Ohne Berücksichtigung der Reihenfolge $k < n$\\
-ohne Wdh/Zl: $\binom{n}{k}$\\
+ohne Wdh/Zl: $\binom{n}{k}$;
 mit Wdh/Zl: $\binom{n+k-1}{k}$\\
 
 \textbf{Wahrscheinlichkeiten}
@@ -125,8 +125,7 @@ $\Phi(-t) = 1-\Phi(t)$
 \textbf{Gleichverteilung auf [a,b]}
 
 $f(x) = \frac{1}{b-a}$ für $x \in (a,b)$ sonst 0\\
-$E(X) = \frac{b+a}{2}$\\
-$V(X) = \frac{(b-a)^2}{12}$
+$E(X) = \frac{b+a}{2}$; $V(X) = \frac{(b-a)^2}{12}$\\
 
 \textbf{Exponentialverteilung $Exp(\lambda)$}
 
@@ -173,6 +172,11 @@ $\alpha_{i,0} = y_i$; $\alpha_{i,j} = \frac{\alpha_{i,j-1} - \alpha_{i-1,j-1}}{x
 
 $P_{i,0}(x) = y_i$\\
 $P_{i,j}(x) = \frac{(x-x_{i-j})P_{i,j-1}(x) - (x-x_i)P_{i-1,j-1}(x)}{x_i - x_{i-j}}$\\
+
+\textbf{Fehlerabschätzung}
+
+$x_i \in [a,b]$ Stützstellen zu Interpolationspoly $p(x)$\\
+$\forall x^* \exists \zeta \in [a,b]: |f(x^*) - p(x^*)| = \frac{f^{(n-1)} (\zeta)}{(n+1)!} \prod_{i=0}^{n}(x^* - x_i)$\\
 
 \textbf{Newton-Cotes-Formel}
 
@@ -257,9 +261,8 @@ $y'(x)=a_0(x)y(x) \Rightarrow y(x) = ce^{\int{a_0}dx}$\\
 \textbf{D'Alembert'sches Reduktionsverfahren}
 
 $y_1$ als spezielle Lösung gegeben\\
-$y=y_1 \cdot u(x)$ als Ansatz\\
-$z(x) = u'(x)$\\
-$y_2 = y_1 \cdot u(x)$\\
+(1) $y=y_1 \cdot u(x)$ als Ansatz; (2)$z(x) = u'(x)$\\
+(3) $y_2 = y_1 \cdot u(x)$\\
 
 \textbf{Lineare DGL 2. Ordnung mit konst Koeff}
 
